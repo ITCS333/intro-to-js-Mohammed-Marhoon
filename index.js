@@ -51,9 +51,9 @@ function findLargest(numbers) {
 function isPalindrome(str) {
   // TODO: Implement this function.
   str=str.toLowerCase();
-  str2=reverseString(str);
+  str2=str.split('').reverse().join('');
   
-  if(str2===str){
+  if(str2 === str){
     return true;
   }else{
     return false;
